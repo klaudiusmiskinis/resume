@@ -4,9 +4,389 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="icons.css" />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Klaudijus Miskinis</title>
   </head>
-  <body>
-      <p>Klau</p>
+  <body class="dark-mode">
+    <div
+      class="container-fluid p-0 dark-mode position-relative jarallax pb-xl-3"
+    >
+      <span
+        class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-70 zindex-1"
+      ></span>
+
+      <div class="container-fluid px-0 position-relative pb-5 zindex-5">
+        <nav class="ms-2 py-4" aria-label="breadcrumb">
+          <ol class="breadcrumb mb-0 py-3">
+            <li class="breadcrumb-item">
+              <a href="#"><i class="bi bi-house-fill me-2"></i>Home</a>
+            </li>
+          </ol>
+        </nav>
+
+        <div class="row mx-2 mb-xxl-5 py-md-4 py-lg-5">
+          <div class="col-lg-6 col-md-7 pb-3 pb-md-0 mb-4 mb-md-5">
+            <div class="mb-3 fs-lg text-light">
+              <img
+                src="flame.svg"
+                width="24"
+                alt="Flame icon"
+                class="mt-n1 me-1"
+              />
+              Web Developer
+            </div>
+            <h1 class="display-5">Klaudijus Miskinis</h1>
+            <p class="pb-md-3 text-light">
+              Desarrollador FullStack joven, motivado y con ganas de aprender.
+            </p>
+            <div class="d-flex flex-wrap mb-md-5 mb-4 pb-md-2 text-white">
+              <div class="border-end border-light h-100 mb-2 pe-3 me-3">
+                <span class="badge bg-faded-light fs-base">Tecnologías</span>
+              </div>
+              <div class="d-flex align-items-center mb-2 text-nowrap">
+                <div class="d-flex align-items-center me-3 opacity-70">
+                  <i class="bi-like fs-lg me-1"></i>
+                  <span class="fs-sm">NodeJS</span>
+                </div>
+                <div class="d-flex align-items-center me-3 opacity-70">
+                  <i class="bi-comment fs-lg me-1"></i>
+                  <span class="fs-sm">Angular</span>
+                </div>
+                <div class="d-flex align-items-center me-3 opacity-70">
+                  <i class="bi-share-alt fs-lg me-1"></i>
+                  <span class="fs-sm">MongoDB</span>
+                </div>
+                <div class="d-flex align-items-center opacity-70">
+                  <i class="bi-share-alt fs-lg me-1"></i>
+                  <span class="fs-sm">MySQL</span>
+                </div>
+              </div>
+            </div>
+            <a href="blog-single.html" class="btn btn-lg btn-primary">
+              Ver proyectos
+              <i class="bi-right-arrow-alt ms-2 me-n1 lead"></i>
+            </a>
+          </div>
+
+          <!-- Articles slider -->
+          <div class="col-lg-4 offset-lg-2 col-md-5">
+            <div
+              class="swiper overflow-hidden w-100 ms-n2 ms-md-0 pe-3 pe-sm-4 swiper-initialized swiper-vertical swiper-pointer-events swiper-free-mode swiper-backface-hidden"
+              style="max-height: 405px"
+              data-swiper-options='{
+                "direction": "vertical",
+                "slidesPerView": "auto",
+                "freeMode": true,
+                "scrollbar": {
+                  "el": ".swiper-scrollbar"
+                },
+                "mousewheel": true
+              }'
+            >
+              <div
+                class="swiper-wrapper pe-md-2"
+                id="swiper-wrapper-bc7e1117728177e9"
+                aria-live="polite"
+              >
+                <div
+                  class="swiper-slide h-auto px-2 swiper-slide-active"
+                  role="group"
+                  aria-label="1 / 1"
+                >
+                  <div
+                    class="row row-cols-md-1 row-cols-sm-2 row-cols-1 g-md-4 g-3"
+                  >
+                    <!-- Article -->
+                    <div class="col">
+                      <article
+                        class="card h-100 border-0 shadow-sm card-hover-primary"
+                      >
+                        <div class="card-body pb-0">
+                          <div
+                            class="d-flex align-items-center justify-content-between mb-3"
+                          >
+                            <a
+                              href="#"
+                              class="badge fs-sm text-nav bg-white text-decoration-none position-relative zindex-2"
+                              >Técnico superior</a
+                            >
+                            <span class="fs-sm text-muted">2020 - 2022</span>
+                          </div>
+                          <h3 class="h5 mb-0">
+                            <a href="blog-single.html" class="stretched-link"
+                              >Desarrollo de aplicaciones web</a
+                            >
+                          </h3>
+                        </div>
+                        <div
+                          class="card-footer d-flex align-items-center py-4 text-muted border-top-0"
+                        >
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-like fs-lg me-1"></i>
+                            <span class="fs-sm">Ilerna, Lleida</span>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+
+                    <!-- Article -->
+                    <div class="col">
+                      <article
+                        class="card h-100 border-0 shadow-sm card-hover-primary"
+                      >
+                        <div class="card-body pb-0">
+                          <div
+                            class="d-flex align-items-center justify-content-between mb-3"
+                          >
+                            <a
+                              href="#"
+                              class="badge fs-sm text-nav bg-white text-decoration-none position-relative zindex-2"
+                              >Técnico</a
+                            >
+                            <span class="fs-sm text-muted">2018-2020</span>
+                          </div>
+                          <h3 class="h5 mb-0">
+                            <a href="blog-single.html" class="stretched-link"
+                              >Sistemas microinformáticos y redes</a
+                            >
+                          </h3>
+                        </div>
+                        <div
+                          class="card-footer d-flex align-items-center py-4 text-muted border-top-0"
+                        >
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-like fs-lg me-1"></i>
+                            <span class="fs-sm">Ilerna, Lleida</span>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+
+                    <!-- Article -->
+                    <div class="col">
+                      <article
+                        class="card h-100 border-0 shadow-sm card-hover-primary"
+                      >
+                        <div class="card-body pb-0">
+                          <div
+                            class="d-flex align-items-center justify-content-between mb-3"
+                          >
+                            <a
+                              href="#"
+                              class="badge fs-sm text-nav bg-white text-decoration-none position-relative zindex-2"
+                              >Digital</a
+                            >
+                            <span class="fs-sm text-muted">May 25, 2021</span>
+                          </div>
+                          <h3 class="h5 mb-0">
+                            <a href="blog-single.html" class="stretched-link"
+                              >Inclusive Marketing: Why and How Does it Work?</a
+                            >
+                          </h3>
+                        </div>
+                        <div
+                          class="card-footer d-flex align-items-center py-4 text-muted border-top-0"
+                        >
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-like fs-lg me-1"></i>
+                            <span class="fs-sm">5</span>
+                          </div>
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-comment fs-lg me-1"></i>
+                            <span class="fs-sm">0</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <i class="bi-share-alt fs-lg me-1"></i>
+                            <span class="fs-sm">2</span>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+
+                    <!-- Article -->
+                    <div class="col">
+                      <article
+                        class="card h-100 border-0 shadow-sm card-hover-primary"
+                      >
+                        <div class="card-body pb-0">
+                          <div
+                            class="d-flex align-items-center justify-content-between mb-3"
+                          >
+                            <a
+                              href="#"
+                              class="badge fs-sm text-nav bg-white text-decoration-none position-relative zindex-2"
+                              >Technology</a
+                            >
+                            <span class="fs-sm text-muted">May 26, 2021</span>
+                          </div>
+                          <h3 class="h5 mb-0">
+                            <a href="blog-single.html" class="stretched-link"
+                              >A Study on Smartwatch Design Qualities and
+                              People’s Preferences</a
+                            >
+                          </h3>
+                        </div>
+                        <div
+                          class="card-footer d-flex align-items-center py-4 text-muted border-top-0"
+                        >
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-like fs-lg me-1"></i>
+                            <span class="fs-sm">7</span>
+                          </div>
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-comment fs-lg me-1"></i>
+                            <span class="fs-sm">4</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <i class="bi-share-alt fs-lg me-1"></i>
+                            <span class="fs-sm">1</span>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+
+                    <!-- Article -->
+                    <div class="col">
+                      <article
+                        class="card h-100 border-0 shadow-sm card-hover-primary"
+                      >
+                        <div class="card-body pb-0">
+                          <div
+                            class="d-flex align-items-center justify-content-between mb-3"
+                          >
+                            <a
+                              href="#"
+                              class="badge fs-sm text-nav bg-white text-decoration-none position-relative zindex-2"
+                              >Startups</a
+                            >
+                            <span class="fs-sm text-muted">May 27, 2021</span>
+                          </div>
+                          <h3 class="h5 mb-0">
+                            <a href="blog-single.html" class="stretched-link"
+                              >Why UX Design Matters and How it Affects
+                              Ranking</a
+                            >
+                          </h3>
+                        </div>
+                        <div
+                          class="card-footer d-flex align-items-center py-4 text-muted border-top-0"
+                        >
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-like fs-lg me-1"></i>
+                            <span class="fs-sm">5</span>
+                          </div>
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-comment fs-lg me-1"></i>
+                            <span class="fs-sm">3</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <i class="bi-share-alt fs-lg me-1"></i>
+                            <span class="fs-sm">9</span>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+
+                    <!-- Article -->
+                    <div class="col">
+                      <article
+                        class="card h-100 border-0 shadow-sm card-hover-primary"
+                      >
+                        <div class="card-body pb-0">
+                          <div
+                            class="d-flex align-items-center justify-content-between mb-3"
+                          >
+                            <a
+                              href="#"
+                              class="badge fs-sm text-nav bg-white text-decoration-none position-relative zindex-2"
+                              >Web</a
+                            >
+                            <span class="fs-sm text-muted">May 28, 2021</span>
+                          </div>
+                          <h3 class="h5 mb-0">
+                            <a href="blog-single.html" class="stretched-link"
+                              >This Week in Search: New Limits and Exciting
+                              Features</a
+                            >
+                          </h3>
+                        </div>
+                        <div
+                          class="card-footer d-flex align-items-center py-4 text-muted border-top-0"
+                        >
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-like fs-lg me-1"></i>
+                            <span class="fs-sm">3</span>
+                          </div>
+                          <div class="d-flex align-items-center me-3">
+                            <i class="bi-comment fs-lg me-1"></i>
+                            <span class="fs-sm">5</span>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <i class="bi-share-alt fs-lg me-1"></i>
+                            <span class="fs-sm">2</span>
+                          </div>
+                        </div>
+                      </article>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-scrollbar">
+                <div
+                  class="swiper-scrollbar-drag"
+                  style="
+                    height: 127.247px;
+                    transform: translate3d(0px, 0px, 0px);
+                  "
+                ></div>
+              </div>
+              <span
+                class="swiper-notification"
+                aria-live="assertive"
+                aria-atomic="true"
+              ></span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="jarallax-container-0"
+        style="
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          z-index: -100;
+          clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+        "
+      >
+        <div
+          class="jarallax-img bg-dark opacity-70"
+          style="
+            background-image: url('code.jpg');
+            object-fit: cover;
+            object-position: 50% 50%;
+            max-width: none;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            width: 1492px;
+            height: 887.894px;
+            overflow: hidden;
+            pointer-events: none;
+            transform-style: preserve-3d;
+            backface-visibility: hidden;
+            will-change: transform, opacity;
+            margin-top: 40.5531px;
+            transform: translate3d(0px, -10.1531px, 0px);
+          "
+          data-jarallax-original-styles="background-image: url('laptop.jpg');"
+        ></div>
+      </div>
+    </div>
   </body>
 </html>
