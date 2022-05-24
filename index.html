@@ -11,27 +11,110 @@
     <title>Klaudijus Miskinis</title>
   </head>
   <body>
-    <!-- Link swiper slides to any content via swiper-tabs. Place outside of any container -->
+    <section class="pt-lg-4 mt-lg-3">
+      <div class="position-relative overflow-hidden">
+        <div
+          class="container-fluid position-relative position-lg-absolute top-0 start-0 h-100"
+        >
+          <div class="row h-100 me-n4 me-n2">
+            <div class="col-lg-7 position-relative">
+              <div
+                class="d-none d-sm-block d-lg-none"
+                style="height: 400px"
+              ></div>
+              <div class="d-sm-none" style="height: 300px"></div>
+              <div
+                class="jarallax position-absolute top-0 start-0 w-100 h-100 rounded-3 rounded-start-0 overflow-hidden"
+                data-jarallax=""
+                data-speed="0.5"
+              >
+                <div
+                  id="jarallax-container-0"
+                  style="
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    z-index: -100;
+                    clip-path: polygon(0px 0px, 100% 0px, 100% 100%, 0px 100%);
+                  "
+                >
+                  <div
+                    class="jarallax-img"
+                    style="
+                      background-image: url('assets/images/jpg/cover.jpg');
+                      object-fit: cover;
+                      object-position: 50% 50%;
+                      max-width: none;
+                      position: fixed;
+                      top: 0px;
+                      left: 0px;
+                      width: 617.75px;
+                      height: 878.102px;
+                      overflow: hidden;
+                      pointer-events: none;
+                      transform-style: preserve-3d;
+                      backface-visibility: hidden;
+                      will-change: transform, opacity;
+                      margin-top: 45.4492px;
+                      transform: translate3d(0px, 12.5508px, 0px);
+                    "
+                    data-jarallax-original-styles="background-image: url(assets/img/landing/financial/hero-img.jpg);"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container position-relative zindex-5 pt-lg-5 px-0 px-lg-3">
+          <div class="row pt-lg-5 mx-n4 mx-lg-n3">
+            <div class="col-xl-6 col-lg-7 offset-lg-5 offset-xl-6 pb-5">
+              <!-- Card -->
+              <div
+                class="card bg-dark border-light overflow-hidden py-4 px-2 p-sm-4"
+              >
+                <span
+                  class="position-absolute top-0 start-0 w-100 h-100"
+                  style="background-color: rgba(255, 255, 255, 0.05)"
+                ></span>
+                <div class="card-body position-relative zindex-5">
+                  <p class="fs-xl fw-bold text-primary text-uppercase mb-3">
+                    Power your business
+                  </p>
+                  <h1 class="display-5 text-light pb-3 mb-3">
+                    Clever Financial Consulting
+                  </h1>
+                  <p class="fs-lg text-light opacity-70 mb-5">
+                    Helping our clients meet their financial needs for more than
+                    10 years. We offer you the full spectrum of global financial
+                    services.
+                  </p>
+                  <div class="d-flex flex-column flex-sm-row">
+                    <a
+                      href="#"
+                      class="btn btn-primary shadow-primary btn-lg mb-3 mb-sm-0 me-sm-4"
+                      >Get started</a
+                    >
+                    <a href="#" class="btn btn-outline-light btn-lg">
+                      Who we are
+                      <i class="bx bx-right-arrow-alt fs-4 lh-1 ms-2 me-n1"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="position-relative py-lg-4 py-xl-5">
-      <!-- Swiper tabs -->
       <div class="swiper-tabs position-absolute top-0 start-0 w-100 h-100">
         <div
-          id="image-1"
           class="position-absolute top-0 start-0 w-100 h-100 bg-position-center bg-repeat-0 bg-size-cover swiper-tab active"
-          style="
-            background-image: url(assets/img/landing/software-company/case-study01.jpg);
-          "
-        >
-          <span
-            class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"
-          ></span>
-        </div>
-        <div
-          id="image-2"
-          class="position-absolute top-0 start-0 w-100 h-100 bg-position-center bg-repeat-0 bg-size-cover swiper-tab"
-          style="
-            background-image: url(assets/img/landing/software-company/case-study02.jpg);
-          "
         >
           <span
             class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35"
@@ -42,47 +125,13 @@
       <div class="container position-relative zindex-5 py-5">
         <div class="row py-2 py-md-3">
           <div class="col-xl-5 col-lg-7 col-md-9">
-            <div
-              class="d-flex justify-content-center justify-content-md-start pb-3 mb-3"
-            >
-              <button
-                type="button"
-                id="case-study-prev"
-                class="btn btn-prev btn-icon btn-sm bg-white me-2"
-              >
-                <i class="bx bx-chevron-left"></i>
-              </button>
-              <button
-                type="button"
-                id="case-study-next"
-                class="btn btn-next btn-icon btn-sm bg-white ms-2"
-              >
-                <i class="bx bx-chevron-right"></i>
-              </button>
-            </div>
-
             <div class="card bg-white shadow-sm p-3">
               <div class="card-body">
-                <div
-                  class="swiper"
-                  data-swiper-options='{
-              "spaceBetween": 30,
-              "loop": true,
-              "tabs": true,
-              "pagination": {
-                "el": "#case-study-pagination",
-                "clickable": true
-              },
-              "navigation": {
-                "prevEl": "#case-study-prev",
-                "nextEl": "#case-study-next"
-              }
-            }'
-                >
+                <div class="swiper">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide" data-swiper-tab="#image-1">
                       <img
-                        src="node.png"
+                        src="assets/images/png/node.png"
                         class="d-block mb-3"
                         width="50"
                         alt="Logo"
@@ -147,16 +196,85 @@
             </div>
 
             <div class="dark-mode pt-4 mt-3">
-              <div
-                id="case-study-pagination"
-                class="swiper-pagination position-relative bottom-0"
-              ></div>
+              <div class="swiper-pagination position-relative bottom-0"></div>
+            </div>
+          </div>
+          <div class="col-xl-5 col-lg-7 col-md-9">
+            <div class="card bg-white shadow-sm p-3">
+              <div class="card-body">
+                <div class="swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide" data-swiper-tab="#image-1">
+                      <img
+                        src="assets/images/png/node.png"
+                        class="d-block mb-3"
+                        width="50"
+                        alt="Logo"
+                      />
+                      <h3 class="mb-1">Backend</h3>
+                      <h6 class="mb-2">NodeJS</h6>
+                      <p class="pb-2 pb-lg-3 mb-1">
+                        Tengo Javascript como lenguaje principal para desarrollo
+                        de backend, tanto como para APIs y REST.
+                      </p>
+                      <p class="pb-2 pb-lg-3 mb-0">
+                        <b>Dependencias utilizadas:</b>
+                      </p>
+                      <span class="badge bg-success shadow-success"
+                        >Express</span
+                      >
+                      <span class="badge bg-success shadow-success"
+                        >File system</span
+                      >
+                      <span class="badge bg-success shadow-success">JWT</span>
+                      <span class="badge bg-success shadow-success"
+                        >Socket.io</span
+                      >
+                      <span class="badge bg-success shadow-success"
+                        >Sequelize</span
+                      >
+                      <span class="badge bg-success shadow-success"
+                        >Mongoose</span
+                      >
+                      <span class="badge bg-success shadow-success"
+                        >Dotenv</span
+                      >
+                      <span class="badge bg-success shadow-success">CORS</span>
+                      <span class="badge bg-success shadow-success"
+                        >Bcrypt</span
+                      >
+                    </div>
+
+                    <!-- Item -->
+                    <div class="swiper-slide" data-swiper-tab="#image-2">
+                      <img
+                        src="node.png"
+                        class="d-block mb-3"
+                        width="72"
+                        alt="Logo"
+                      />
+                      <h3 class="mb-2">Smart tech "udy</h3>
+                      <p class="fs-sm text-muted border-bottom pb-3 mb-3">
+                        Data Analytics Company
+                      </p>
+                      <p class="pb-2 pb-lg-3 mb-3">
+                        Adipiscing quis a at ligula. Gravida gravida diam
+                        rhoncus cursus in. Turpis sagittis tempor gravida
+                        phasellus sapien. Faucibus donec consectetur sed id sit
+                        nisl.
+                      </p>
+                      <a href="#" class="btn btn-primary">View "udy</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-
     <script src="swiper/swiper.js"></script>
+    <script src="smoothscroll.js"></script>
+    <script src="theme.min.js"></script>
   </body>
 </html>
