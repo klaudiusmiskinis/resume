@@ -1,1 +1,3 @@
-/* To be imporved... */
+body {
+  background-color: var(--bs-dark);
+}
