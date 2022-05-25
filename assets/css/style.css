@@ -1,8 +1,20 @@
+*, html, body {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bs-dark);
 }
 
-.card-hover span:hover {
+:root {
+  --bs-dark-half: rgba(255, 255, 255, 0.05);
+}
+
+.bg-dark-half {
+  background-color: var(--bs-dark-half) !important;
+}
+
+.card-hover .position-absolute:hover {
   border-bottom: 3px solid;
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
     border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
