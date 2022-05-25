@@ -4,13 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="swiper/swiper.css" />
+    <link rel="icon" href="assets/images/svg/logo.svg" />
     <link rel="stylesheet" href="assets/css/icons.css" />
     <link rel="stylesheet" href="assets/css/theme.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Klaudijus Miskinis</title>
   </head>
   <body>
+    <header class="navbar navbar-dark bg-dark shadow-sm border border-light">
+      <div class="container px-3">
+        <a href="#" class="navbar-brand text-primary"> KM </a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse1"
+          aria-expanded="false"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <nav id="navbarCollapse1" class="navbar-collapse collapse">
+          <hr class="d-lg-none mt-3 mb-2" />
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a href="#name" class="nav-link">Introducción</a>
+            </li>
+            <li class="nav-item">
+              <a href="#tools" class="nav-link">Herramientas</a>
+            </li>
+            <li class="nav-item">
+              <a href="#formation" class="nav-link">Formaciones</a>
+            </li>
+            <li class="nav-item">
+              <a href="#projects" class="nav-link">Proyectos</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
     <section class="pt-lg-5 mt-lg-3">
       <div class="position-relative overflow-hidden">
         <div
@@ -73,6 +105,7 @@
           <div class="row pt-lg-5 mx-n4 mx-lg-n3">
             <div class="col-xl-6 col-lg-7 offset-lg-5 offset-xl-6 pb-5">
               <div
+                id="name"
                 class="card rounded-0 bg-dark border-light overflow-hidden py-4 px-2 p-sm-4"
               >
                 <span
@@ -109,7 +142,7 @@
     <div class="position-relative py-lg-4 py-xl-4">
       <div class="container position-relative zindex-5 py-5">
         <div class="row justify-content-center py-2 py-md-3">
-          <div class="col-xl-5 col-lg-7 col-md-9">
+          <div id="tools" class="col-xl-5 col-lg-7 col-md-9">
             <h3 class="text-muted">Herramientas</h3>
             <div class="card bg-dark card-hover border-0 shadow-sm p-3">
               <span
@@ -198,7 +231,7 @@
         </div>
 
         <div class="row justify-content-center py-2 py-md-3">
-          <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1">
+          <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5">
             <div class="card bg-dark card-hover border-0 shadow-sm p-3">
               <span
                 class="position-absolute border-warning top-0 start-0 w-100 h-100 rounded"
@@ -232,7 +265,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1">
+          <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5">
             <div class="card bg-dark card-hover border-0 shadow-sm p-3">
               <span
                 class="position-absolute border-info top-0 start-0 w-100 h-100 rounded"
@@ -270,7 +303,7 @@
         </div>
 
         <div class="row justify-content-center py-2 py-md-3">
-          <div class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1">
+          <div class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5">
             <div class="card bg-dark card-hover border-0 shadow-sm p-3">
               <span
                 class="position-absolute border-primary top-0 start-0 w-100 h-100 rounded"
@@ -314,35 +347,24 @@
         </div>
 
         <div class="row justify-content-center py-2 py-md-3">
-          <div class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1">
+          <div
+            id="formation"
+            class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5"
+          >
             <h3 class="text-muted">Formación</h3>
-            <div class="card border-0 shadow-sm overflow-hidden mb-4">
+            <div
+              class="card card-hover bg-dark-half border-0 shadow-sm overflow-hidden"
+            >
               <div class="row g-0">
                 <div
                   class="col-sm-4 position-relative bg-position-center bg-repeat-0 bg-size-cover"
                   style="
-                    background-image: url(assets/img/blog/01.jpg);
+                    background-image: url(assets/images/jpg/coding.jpeg);
                     min-height: 15rem;
                   "
-                >
-                  <a
-                    href="blog-single.html"
-                    class="position-absolute top-0 start-0 w-100 h-100"
-                    aria-label="Read more"
-                  ></a>
-                  <a
-                    href="#"
-                    class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    title=""
-                    data-bs-original-title="Read later"
-                  >
-                    <i class="bx bx-bookmark"></i>
-                  </a>
-                </div>
+                ></div>
                 <div class="col-sm-8">
-                  <div class="card-body bg-dark">
+                  <div class="card-body bg-dark-half">
                     <div class="d-flex align-items-center mb-3">
                       <a
                         href="#"
@@ -353,15 +375,15 @@
                         >09/2020 - 05/2022</span
                       >
                       <span class="fs-sm text-muted border-start ps-3 ms-3"
-                      >Ilerna Formació, Lleida</span
-                    >
+                        >Ilerna Formació, Lleida</span
+                      >
                     </div>
                     <h3 class="h4">
                       <div class="text-light">
                         Desarrollo de aplicaciones web
                       </div>
                     </h3>
-                    <p>
+                    <p class="text-muted">
                       El trabajo de un desarrollador es crear, escribir, probar
                       y documentar sitios web, aplicaciones o software. Los
                       desarrolladores trabajan en equipo, la mayoría de las
@@ -369,44 +391,70 @@
                       desarrolladores.
                     </p>
                     <hr class="my-4" />
-                    <div
-                      class="d-flex align-items-center justify-content-between"
-                    >
-                      <a
-                        href="#"
-                        class="d-flex align-items-center fw-bold text-dark text-decoration-none me-3"
-                      >
-                        <img
-                          src="assets/img/avatar/01.jpg"
-                          class="rounded-circle me-3"
-                          width="48"
-                          alt="Avatar"
-                        />
-                        Jerome Bell
-                      </a>
-                      <div class="d-flex align-items-center text-muted">
-                        <div class="d-flex align-items-center me-3">
-                          <i class="bx bx-like fs-lg me-1"></i>
-                          <span class="fs-sm">8</span>
-                        </div>
-                        <div class="d-flex align-items-center me-3">
-                          <i class="bx bx-comment fs-lg me-1"></i>
-                          <span class="fs-sm">7</span>
-                        </div>
-                        <div class="d-flex align-items-center">
-                          <i class="bx bx-share-alt fs-lg me-1"></i>
-                          <span class="fs-sm">4</span>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="row justify-content-center py-2 py-md-3">
+          <div class="col-xl-10 col-lg-7 col-md-9 mt-md-2 mt-lg-1">
+            <div
+              class="card card-hover bg-dark-half border-0 shadow-sm overflow-hidden mb-4"
+            >
+              <div class="row g-0">
+                <div
+                  class="col-sm-4 position-relative bg-position-center bg-repeat-0 bg-size-cover"
+                  style="
+                    background-image: url(assets/images/jpg/tecnico.jpg);
+                    min-height: 15rem;
+                  "
+                ></div>
+                <div class="col-sm-8">
+                  <div class="card-body bg-dark-half">
+                    <div class="d-flex align-items-center mb-3">
+                      <a
+                        href="#"
+                        class="badge fs-sm text-nav bg-secondary text-decoration-none"
+                        >Técnico</a
+                      >
+                      <span class="fs-sm text-muted border-start ps-3 ms-3"
+                        >09/2018 - 05/2020</span
+                      >
+                      <span class="fs-sm text-muted border-start ps-3 ms-3"
+                        >Ilerna Formació, Lleida</span
+                      >
+                    </div>
+                    <h3 class="h4">
+                      <div class="text-light">
+                        Sistemas microinformáticos y redes
+                      </div>
+                    </h3>
+                    <p class="text-muted">
+                      El técnico en soporte informático es la persona encargada
+                      de la instalación, mantenimiento y resolución de
+                      incidencias de los equipos informáticos y redes en las
+                      organizaciones.
+                    </p>
+                    <hr class="my-4" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row justify-content-center py-2 py-md-3">
+          <div
+            id="projects"
+            class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5"
+          >
+            <h3 class="text-muted">Proyectos</h3>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="swiper/swiper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
   </body>
 </html>
