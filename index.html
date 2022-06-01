@@ -46,22 +46,39 @@
     <div class="container col-xxl-8 px-4 py-3">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-sm-8 col-md-12 col-lg-6 col-10 text-md-center">
-          <img src="assets/images/jpg/cover.jpg" class="d-block mx-lg-auto img-fluid " width="600" height="400" loading="lazy">
+          <img
+            src="assets/images/jpg/cover.jpg"
+            class="d-block mx-lg-auto main-picture img-fluid rellax"
+            data-rellax-speed="-2"
+            loading="lazy"
+          />
         </div>
         <div class="col-lg-6">
           <h3 class="text-info">Full Stack Web Developer</h3>
-          <h1 class="display-5 text-light fw-bold lh-1 mb-3">Klaudijus Miskinis</h1>
-          <h5 class="text-light fw-lighter">Desarrollador web joven, motivado y que busca aprender y cultivar conocimientos de los proyectos que se le propongan.</h5>
+          <h1 class="display-5 text-light fw-bold lh-1 mb-3">
+            Klaudijus Miskinis
+          </h1>
+          <h5 class="text-light fw-lighter">
+            Desarrollador web joven, motivado y que busca aprender y cultivar
+            conocimientos de los proyectos que se le propongan.
+          </h5>
           <h5></h5>
           <div class="d-flex gap-2 d-md-flex">
-            <button type="button" class="btn btn-primary btn-lg px-4 me-md-2 col">Github</button>
+            <button
+              type="button"
+              class="btn btn-primary btn-lg px-4 me-md-2 col"
+            >
+              Github
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row justify-content-center py-2 py-md-3 g-0" style="margin-top: 150px
-     ;">
+    <div
+      class="row justify-content-center py-2 py-md-3 g-0"
+      style="margin-top: 150px"
+    >
       <div
         id="formation"
         class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5"
@@ -94,16 +111,13 @@
                   >
                 </div>
                 <h3 class="h4">
-                  <div class="text-light">
-                    Desarrollo de aplicaciones web
-                  </div>
+                  <div class="text-light">Desarrollo de aplicaciones web</div>
                 </h3>
                 <p class="text-muted">
-                  El trabajo de un desarrollador es crear, escribir, probar
-                  y documentar sitios web, aplicaciones o software. Los
-                  desarrolladores trabajan en equipo, la mayoría de las
-                  veces con clientes, project managers y otros
-                  desarrolladores.
+                  El trabajo de un desarrollador es crear, escribir, probar y
+                  documentar sitios web, aplicaciones o software. Los
+                  desarrolladores trabajan en equipo, la mayoría de las veces
+                  con clientes, project managers y otros desarrolladores.
                 </p>
                 <hr class="my-4" />
               </div>
@@ -147,10 +161,9 @@
                   </div>
                 </h3>
                 <p class="text-muted">
-                  El técnico en soporte informático es la persona encargada
-                  de la instalación, mantenimiento y resolución de
-                  incidencias de los equipos informáticos y redes en las
-                  organizaciones.
+                  El técnico en soporte informático es la persona encargada de
+                  la instalación, mantenimiento y resolución de incidencias de
+                  los equipos informáticos y redes en las organizaciones.
                 </p>
                 <hr class="my-4" />
               </div>
@@ -366,8 +379,6 @@
           </div>
         </div>
 
-        
-
         <div class="row justify-content-center py-2 py-md-3 text-light">
           <div
             id="projects"
@@ -376,14 +387,15 @@
             <h3 class="text-muted">Proyectos</h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
               <div class="col position-relative project mb-4 mb-lg-5">
-                
                 <img
                   src="assets/images/png/in.png"
                   class="b-block card-hover rounded-3 shadow-sm"
                   alt="Insinia"
                 />
                 <h3 class="h5 mt-4 mb-3 mb-lg-0">
-                  <a href="https://insinia.marcgavin.com/home" class="stretched-link"
+                  <a
+                    href="https://insinia.marcgavin.com/home"
+                    class="stretched-link"
                     >Insinia</a
                   >
                 </h3>
@@ -395,7 +407,9 @@
                   alt="Twitch Chat"
                 />
                 <h3 class="h5 mt-4 mb-3 mb-lg-0">
-                  <a href="https://twitch-chat-channel.herokuapp.com/" class="stretched-link"
+                  <a
+                    href="https://twitch-chat-channel.herokuapp.com/"
+                    class="stretched-link"
                     >Twitch Chat</a
                   >
                 </h3>
@@ -415,11 +429,14 @@
                 </h3>
               </div>
             </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
     <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/rellax.min.js"></script>
+    <script>
+      var rellax = new Rellax(".rellax");
+    </script>
   </body>
 </html>
