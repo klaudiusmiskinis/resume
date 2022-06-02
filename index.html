@@ -11,21 +11,22 @@
     <title>Klaudijus Miskinis</title>
   </head>
   <body>
-    <header class="navbar navbar-dark bg-dark shadow-sm border border-light">
+    <header
+      class="navbar navbar-dark bg-dark shadow-sm border-bottom border-primary zindex-5"
+    >
       <div class="container px-3">
         <a href="#" class="navbar-brand text-primary"> KM </a>
-        <button
-          class="navbar-toggler collapsed"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarCollapse1"
-          aria-expanded="false"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <nav id="navbarCollapse1" class="navbar-collapse collapse">
-          <hr class="d-lg-none mt-3 mb-2" />
-          <ul class="navbar-nav me-auto">
+        <div class="dropdown me-5">
+          <button
+            class="btn btn-transparent dropdown-toggle"
+            id="menu"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          ></button>
+          <ul
+            class="dropdown-menu dropdown-menu-start bg-dark border-0 border-bottom border-primary"
+            aria-labelledby="menu"
+          >
             <li class="nav-item">
               <a href="#name" class="nav-link">Introducción</a>
             </li>
@@ -39,34 +40,117 @@
               <a href="#projects" class="nav-link">Proyectos</a>
             </li>
           </ul>
-        </nav>
+        </div>
       </div>
     </header>
 
-    <div class="container col-xxl-8 px-4 py-3">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-        <div class="col-sm-8 col-md-12 col-lg-6 col-10 text-md-center">
+    <section class="position-relative py-5">
+      <div
+        class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-primary opacity-10"
+      ></div>
+      <div class="container position-relative zindex-2 py-lg-4">
+        <div class="row">
+          <div class="col-md-5 d-flex flex-column pt-lg-4 pt-xl-5">
+            <h5 class="my-2 text-primary">¡Bienvenido!</h5>
+            <h2 class="display-5 mb-1 text-light">Klaudijus Miskinis</h2>
+            <p class="fs-lg mb-3 text-muted">
+              Soy Desarrollador Web Full Stack
+            </p>
+
+            <div
+              class="d-flex align-items-center mt-auto mb-1 mb-lg-0 pb-1 pb-lg-0 pb-xl-5"
+            >
+              <div class="d-flex me-3">
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-circle"
+                  style="width: 52px; height: 52px"
+                >
+                  <img
+                    src="assets/images/png/node.png"
+                    class="rounded-circle"
+                    width="48"
+                    alt="Node"
+                  />
+                </div>
+
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-circle ms-n3"
+                  style="width: 52px; height: 52px"
+                >
+                  <img
+                    src="assets/images/png/js.png"
+                    class="rounded-circle"
+                    width="48"
+                    alt="JavaScript"
+                  />
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-circle ms-n3"
+                  style="width: px; height: 52px"
+                >
+                  <img
+                    src="assets/images/png/angular.png"
+                    class="rounded-circle"
+                    width="60"
+                    alt="Angular"
+                  />
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-circle ms-n3"
+                  style="width: 52px; height: 52px"
+                >
+                  <img
+                    src="assets/images/png/php.png"
+                    class="rounded-circle"
+                    width="48"
+                    alt="PHP"
+                  />
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-center rounded-circle ms-n3"
+                  style="width: 65px; height: 52px"
+                >
+                  <img
+                    src="assets/images/png/bootstrap.png"
+                    class="rounded-circle"
+                    width="70"
+                    alt="Bootstrap"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <p class="hidden">a</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="row p-4 align-items-center rounded-3">
+        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
           <img
-            src="assets/images/jpg/cover.jpg"
-            class="d-block mx-lg-auto main-picture img-fluid rellax"
-            data-rellax-speed="-2"
-            loading="lazy"
+            class="rounded-3 main-image"
+            src="assets/images/jpg/klau.jpg"
+            alt=""
+            width="720"
           />
         </div>
-        <div class="col-lg-6">
-          <h3 class="text-info">Full Stack Web Developer</h3>
-          <h1 class="display-5 text-light fw-bold lh-1 mb-3">
+        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+          <h2 class="display-5 fw-bold lh-1 text-primary">
             Klaudijus Miskinis
-          </h1>
-          <h5 class="text-light fw-lighter">
+          </h2>
+          <p class="lead">
             Desarrollador web joven, motivado y que busca aprender y cultivar
             conocimientos de los proyectos que se le propongan.
-          </h5>
-          <h5></h5>
-          <div class="d-flex gap-2 d-md-flex">
+          </p>
+          <div
+            class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3"
+          >
             <button
               type="button"
-              class="btn btn-primary btn-lg px-4 me-md-2 col"
+              class="btn btn-primary shadow-primary btn-lg px-4 me-md-2"
             >
               Github
             </button>
