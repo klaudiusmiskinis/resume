@@ -15,241 +15,146 @@
       class="navbar navbar-dark bg-dark shadow-sm border-bottom border-primary zindex-5"
     >
       <div class="container px-3">
-        <a href="#" class="navbar-brand text-primary"> KM </a>
-        <div class="dropdown me-5">
-          <button
-            class="btn btn-transparent dropdown-toggle"
-            id="menu"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          ></button>
-          <ul
-            class="dropdown-menu dropdown-menu-start bg-dark border-0 border-bottom border-primary"
-            aria-labelledby="menu"
-          >
-            <li class="nav-item">
-              <a href="#name" class="nav-link">Introducción</a>
-            </li>
-            <li class="nav-item">
-              <a href="#tools" class="nav-link">Herramientas</a>
-            </li>
-            <li class="nav-item">
-              <a href="#formation" class="nav-link">Formaciones</a>
-            </li>
-            <li class="nav-item">
-              <a href="#projects" class="nav-link">Proyectos</a>
-            </li>
-          </ul>
-        </div>
+        <a
+          href="#"
+          class="navbar-brand text-primary dropdown-toggle"
+          aria-expanded="false"
+          data-bs-toggle="dropdown"
+        >
+          KM
+        </a>
+        <ul
+          class="dropdown-menu bg-dark border-0 border-bottom border-primary"
+          aria-labelledby="menu"
+        >
+          <li class="nav-item">
+            <a href="#name" class="nav-link">Introducción</a>
+          </li>
+          <li class="nav-item">
+            <a href="#tools" class="nav-link">Herramientas</a>
+          </li>
+          <li class="nav-item">
+            <a href="#formation" class="nav-link">Formaciones</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Proyectos</a>
+          </li>
+        </ul>
       </div>
     </header>
 
-    <section class="position-relative py-5">
-      <div
-        class="position-absolute top-0 start-0 w-100 h-100 bg-gradient-primary opacity-10"
-      ></div>
-      <div class="container position-relative zindex-2 py-lg-4">
-        <div class="row">
-          <div class="col-md-5 d-flex flex-column pt-lg-4 pt-xl-5">
-            <h5 class="my-2 text-primary">¡Bienvenido!</h5>
-            <h2 class="display-5 mb-1 text-light">Klaudijus Miskinis</h2>
-            <p class="fs-lg mb-3 text-muted">
-              Soy Desarrollador Web Full Stack
-            </p>
-
-            <div
-              class="d-flex align-items-center mt-auto mb-1 mb-lg-0 pb-1 pb-lg-0 pb-xl-5"
+    <div class="container py-5 text-center">
+      <div class="row position-relative text-center">
+        <div class="col-lg-10 mx-auto mt-5">
+          <img
+            src="assets/images/jpg/klau.jpg"
+            class="rounded-circle main-image mb-3"
+            alt=""
+          />
+          <h4 class="display-4 mb-5 text-primary">
+            <span class="text-light">Klaudijus Miskinis</span><br />
+            Desarrollador Web Full Stack
+          </h4>
+          <p class="text-muted mb-5">
+            <a
+              class="btn btn-primary shadow-primary"
+              href="index.html"
+              target="_blank"
             >
-              <div class="d-flex me-3">
-                <div
-                  class="d-flex align-items-center justify-content-center rounded-circle"
-                  style="width: 52px; height: 52px"
-                >
-                  <img
-                    src="assets/images/png/node.png"
-                    class="rounded-circle"
-                    width="48"
-                    alt="Node"
-                  />
-                </div>
-
-                <div
-                  class="d-flex align-items-center justify-content-center rounded-circle ms-n3"
-                  style="width: 52px; height: 52px"
-                >
-                  <img
-                    src="assets/images/png/js.png"
-                    class="rounded-circle"
-                    width="48"
-                    alt="JavaScript"
-                  />
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-center rounded-circle ms-n3"
-                  style="width: px; height: 52px"
-                >
-                  <img
-                    src="assets/images/png/angular.png"
-                    class="rounded-circle"
-                    width="60"
-                    alt="Angular"
-                  />
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-center rounded-circle ms-n3"
-                  style="width: 52px; height: 52px"
-                >
-                  <img
-                    src="assets/images/png/php.png"
-                    class="rounded-circle"
-                    width="48"
-                    alt="PHP"
-                  />
-                </div>
-                <div
-                  class="d-flex align-items-center justify-content-center rounded-circle ms-n3"
-                  style="width: 65px; height: 52px"
-                >
-                  <img
-                    src="assets/images/png/bootstrap.png"
-                    class="rounded-circle"
-                    width="70"
-                    alt="Bootstrap"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-7">
-            <p class="hidden">a</p>
-          </div>
+              Ver github</a
+            >
+          </p>
         </div>
       </div>
-    </section>
+    </div>
 
     <div class="container">
-      <div class="row p-4 align-items-center rounded-3">
-        <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden">
-          <img
-            class="rounded-3 main-image"
-            src="assets/images/jpg/klau.jpg"
-            alt=""
-            width="720"
-          />
-        </div>
-        <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
-          <h2 class="display-5 fw-bold lh-1 text-primary">
-            Klaudijus Miskinis
-          </h2>
-          <p class="lead">
-            Desarrollador web joven, motivado y que busca aprender y cultivar
-            conocimientos de los proyectos que se le propongan.
-          </p>
+      <div class="row justify-content-center" style="margin-top: 150px">
+        <div id="formation" class="col-xl-10 col-lg-7 col-md-9">
+          <h3 class="text-muted"><i class="bi bi-award"></i>Formación</h3>
           <div
-            class="d-grid gap-2 d-md-flex justify-content-center mb-4 mb-lg-3"
+            class="card card-hover bg-dark-half border-0 shadow-sm overflow-hidden"
           >
-            <button
-              type="button"
-              class="btn btn-primary shadow-primary btn-lg px-4 me-md-2"
-            >
-              Github
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div
-      class="row justify-content-center py-2 py-md-3 g-0"
-      style="margin-top: 150px"
-    >
-      <div
-        id="formation"
-        class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5"
-      >
-        <h3 class="text-muted">Formación</h3>
-        <div
-          class="card card-hover bg-dark-half border-0 shadow-sm overflow-hidden"
-        >
-          <div class="row g-0">
-            <div
-              class="col-sm-4 position-relative bg-position-center bg-repeat-0 bg-size-cover"
-              style="
-                background-image: url(assets/images/jpg/coding.jpeg);
-                min-height: 15rem;
-              "
-            ></div>
-            <div class="col-sm-8">
-              <div class="card-body bg-dark-half">
-                <div class="d-flex align-items-center mb-3">
-                  <a
-                    href="#"
-                    class="badge fs-sm text-nav bg-secondary text-decoration-none"
-                    >Técnico superior</a
-                  >
-                  <span class="fs-sm text-muted border-start ps-3 ms-3"
-                    >09/2020 - 05/2022</span
-                  >
-                  <span class="fs-sm text-muted border-start ps-3 ms-3"
-                    >Ilerna Formació, Lleida</span
-                  >
+            <div class="row g-0">
+              <div
+                class="col-sm-4 position-relative bg-position-center bg-repeat-0 bg-size-cover"
+                style="
+                  background-image: url(assets/images/jpg/coding.jpeg);
+                  min-height: 15rem;
+                "
+              ></div>
+              <div class="col-sm-8">
+                <div class="card-body bg-dark-half">
+                  <div class="d-flex align-items-center mb-3">
+                    <a
+                      href="#"
+                      class="badge fs-sm text-light bg-primary text-decoration-none"
+                      >Técnico superior</a
+                    >
+                    <span class="fs-sm text-muted border-start ps-3 ms-3"
+                      >09/2020 - 05/2022</span
+                    >
+                    <span class="fs-sm text-muted border-start ps-3 ms-3"
+                      >Ilerna Formació, Lleida</span
+                    >
+                  </div>
+                  <h3 class="h4">
+                    <div class="text-light">Desarrollo de aplicaciones web</div>
+                  </h3>
+                  <p class="text-muted">
+                    El trabajo de un desarrollador es crear, escribir, probar y
+                    documentar sitios web, aplicaciones o software. Los
+                    desarrolladores trabajan en equipo, la mayoría de las veces
+                    con clientes, project managers y otros desarrolladores.
+                  </p>
+                  <hr class="my-4" />
                 </div>
-                <h3 class="h4">
-                  <div class="text-light">Desarrollo de aplicaciones web</div>
-                </h3>
-                <p class="text-muted">
-                  El trabajo de un desarrollador es crear, escribir, probar y
-                  documentar sitios web, aplicaciones o software. Los
-                  desarrolladores trabajan en equipo, la mayoría de las veces
-                  con clientes, project managers y otros desarrolladores.
-                </p>
-                <hr class="my-4" />
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="row justify-content-center py-2 py-md-3 py-lg-4 py-xl-4 g-0">
-      <div class="col-xl-10 col-lg-7 col-md-9 mt-md-2 mt-lg-1">
-        <div
-          class="card card-hover bg-dark-half border-0 shadow-sm overflow-hidden mb-4"
-        >
-          <div class="row g-0">
-            <div
-              class="col-sm-4 position-relative bg-position-center bg-repeat-0 bg-size-cover"
-              style="
-                background-image: url(assets/images/jpg/tecnico.jpg);
-                min-height: 15rem;
-              "
-            ></div>
-            <div class="col-sm-8">
-              <div class="card-body bg-dark-half">
-                <div class="d-flex align-items-center mb-3">
-                  <a
-                    href="#"
-                    class="badge fs-sm text-nav bg-secondary text-decoration-none"
-                    >Técnico</a
-                  >
-                  <span class="fs-sm text-muted border-start ps-3 ms-3"
-                    >09/2018 - 05/2020</span
-                  >
-                  <span class="fs-sm text-muted border-start ps-3 ms-3"
-                    >Ilerna Formació, Lleida</span
-                  >
-                </div>
-                <h3 class="h4">
-                  <div class="text-light">
-                    Sistemas microinformáticos y redes
+      <div class="row justify-content-center pt-3">
+        <div class="col-xl-10 col-lg-7 col-md-9">
+          <div
+            class="card card-hover bg-dark-half border-0 shadow-sm overflow-hidden mb-4"
+          >
+            <div class="row g-0">
+              <div
+                class="col-sm-4 position-relative bg-position-center bg-repeat-0 bg-size-cover"
+                style="
+                  background-image: url(assets/images/jpg/tecnico.jpg);
+                  min-height: 15rem;
+                "
+              ></div>
+              <div class="col-sm-8">
+                <div class="card-body bg-dark-half">
+                  <div class="d-flex align-items-center mb-3">
+                    <a
+                      href="#"
+                      class="badge fs-sm text-light bg-primary text-decoration-none"
+                      >Técnico</a
+                    >
+                    <span class="fs-sm text-muted border-start ps-3 ms-3"
+                      >09/2018 - 05/2020</span
+                    >
+                    <span class="fs-sm text-muted border-start ps-3 ms-3"
+                      >Ilerna Formació, Lleida</span
+                    >
                   </div>
-                </h3>
-                <p class="text-muted">
-                  El técnico en soporte informático es la persona encargada de
-                  la instalación, mantenimiento y resolución de incidencias de
-                  los equipos informáticos y redes en las organizaciones.
-                </p>
-                <hr class="my-4" />
+                  <h3 class="h4">
+                    <div class="text-light">
+                      Sistemas microinformáticos y redes
+                    </div>
+                  </h3>
+                  <p class="text-muted">
+                    El técnico en soporte informático es la persona encargada de
+                    la instalación, mantenimiento y resolución de incidencias de
+                    los equipos informáticos y redes en las organizaciones.
+                  </p>
+                  <hr class="my-4" />
+                </div>
               </div>
             </div>
           </div>
@@ -259,9 +164,13 @@
 
     <div class="position-relative py-lg-4 py-xl-4">
       <div class="container position-relative zindex-5 py-5">
-        <div class="row justify-content-center py-2 py-md-3">
-          <div id="tools" class="col-xl-5 col-lg-7 col-md-9">
+        <div class="row justify-content-center">
+          <div class="col-xl-10 col-lg-7 col-md-9">
             <h3 class="text-muted">Herramientas</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div id="tools" class="col-xl-5 col-lg-7 col-md-9">
             <div class="card bg-dark card-hover border-0 shadow-sm p-3">
               <span
                 class="position-absolute border-success top-0 start-0 w-100 h-100 rounded"
@@ -302,8 +211,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-5 col-lg-7 col-md-9">
-            <h3>.</h3>
+          <div class="col-xl-5 col-lg-7 col-md-9 pt-xl-0 pt-3 pt-md-3">
             <div class="card bg-dark card-hover border-0 shadow-sm p-3">
               <span
                 class="position-absolute border-danger top-0 start-0 w-100 h-100 rounded"
@@ -347,8 +255,8 @@
           </div>
         </div>
 
-        <div class="row justify-content-center py-2 py-md-3">
-          <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5">
+        <div class="row justify-content-center">
+          <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5 pt-3">
             <div class="card bg-dark card-hover border-0 shadow-sm p-3">
               <span
                 class="position-absolute border-warning top-0 start-0 w-100 h-100 rounded"
@@ -382,7 +290,7 @@
               </div>
             </div>
           </div>
-          <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5">
+          <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5 pt-3">
             <div class="card bg-dark card-hover border-0 shadow-sm p-3">
               <span
                 class="position-absolute border-info top-0 start-0 w-100 h-100 rounded"
@@ -419,7 +327,7 @@
           </div>
         </div>
 
-        <div class="row justify-content-center py-2 py-md-3">
+        <div class="row justify-content-center pt-3">
           <div class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5">
             <div class="card bg-dark card-hover border-0 shadow-sm p-3">
               <span
@@ -463,7 +371,7 @@
           </div>
         </div>
 
-        <div class="row justify-content-center py-2 py-md-3 text-light">
+        <div class="row justify-content-center text-light pt-5">
           <div
             id="projects"
             class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5"
@@ -517,10 +425,13 @@
         </div>
       </div>
     </div>
+    <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/rellax.min.js"></script>
     <script>
-      var rellax = new Rellax(".rellax");
+      if (document.querySelector(".rellax")) {
+        var rellax = new Rellax(".rellax");
+      }
     </script>
   </body>
 </html>
