@@ -14,14 +14,26 @@ body {
     border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+  overflow-y: scroll;
+  background: 0 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--bs-primary);
+  border-radius: 10px;
+}
+
 .bg-dark-half {
-  background-color: var(--bs-dark-half) !important;
+  background-color: rgba(31, 28, 45, 1) !important;
 }
 
 .shape {
   height: 150px;
   width: 150px;
-  background-color: #0074d9;
+  background-color: var(--bs-dark);
   border-radius: 80px;
   margin-bottom: 30px;
   float: left;
@@ -34,11 +46,40 @@ body {
 
 .main-image {
   filter: grayscale(1);
-  display: block;
-  max-width: 400px;
-  max-height: 500px;
-  width: auto;
-  height: auto;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+.main-image:hover {
+  filter: grayscale(0);
+  transition: 0.5s;
+}
+
+.dropdown-menu {
+  min-width: 6rem;
+}
+
+.top-25 {
+  top: 25%;
+}
+
+.top-75 {
+  top: 75%;
+}
+
+.end-25 {
+  left: 25%;
+}
+
+.end-75 {
+  left: 75%;
+}
+
+.end-60 {
+  left: 60%;
 }
 
 .card-hover .position-absolute:hover {
