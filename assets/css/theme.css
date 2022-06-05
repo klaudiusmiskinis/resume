@@ -1,7 +1,7 @@
 @import "https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap";
 .text-gradient-primary {
   background: linear-gradient(to right, #6366f1, #8b5cf6, #d946ef);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 :root {
@@ -2078,8 +2078,7 @@ textarea.form-control-lg {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  print-color-adjust: exact;
 }
 .form-check-input[type="checkbox"] {
   border-radius: 0.1875em;
@@ -13830,7 +13829,7 @@ a.badge {
   position: relative;
   text-decoration: none !important;
   overflow: hidden;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);
 }
 .gallery-item > img {
   display: block;
