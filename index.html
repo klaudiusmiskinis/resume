@@ -15,36 +15,30 @@
       class="navbar navbar-dark bg-dark shadow-sm border-bottom border-primary zindex-5"
     >
       <div class="container px-3">
-        <a
-          href="#"
-          class="navbar-brand text-primary dropdown-toggle"
-          aria-expanded="false"
-          data-bs-toggle="dropdown"
-        >
-          KM
-        </a>
-        <ul
-          class="dropdown-menu bg-dark border-0 border-bottom border-primary"
-          aria-labelledby="menu"
-        >
-          <li class="nav-item">
+        <div class="btn-group dropdown">
+          <div
+            class="btn text-primary"
+            data-bs-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            <span class="fw-bold text-12"> KM </span>
+          </div>
+          <div
+            class="dropdown-menu my-2 bg-dark border-0 border-bottom border-primary"
+          >
             <a href="#name" class="nav-link">Introducción</a>
-          </li>
-          <li class="nav-item">
+            <div class="dropdown-divider"></div>
             <a href="#tools" class="nav-link">Herramientas</a>
-          </li>
-          <li class="nav-item">
             <a href="#formation" class="nav-link">Formaciones</a>
-          </li>
-          <li class="nav-item">
             <a href="#projects" class="nav-link">Proyectos</a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </header>
 
     <div class="container py-5 text-center">
-      <div class="row position-relative text-center">
+      <div class="row fullscreen half-margin position-relative text-center">
         <div class="col-lg-10 mx-auto mt-5">
           <img
             src="assets/images/jpg/klau.jpg"
@@ -58,7 +52,7 @@
           <p class="text-muted mb-5">
             <a
               class="btn btn-primary shadow-primary"
-              href="index.html"
+              href="https://github.com/klaudiusmiskinis"
               target="_blank"
             >
               Ver github</a
@@ -71,7 +65,9 @@
     <div class="container">
       <div class="row justify-content-center" style="margin-top: 150px">
         <div id="formation" class="col-xl-10 col-lg-7 col-md-9">
-          <h3 class="text-muted"><i class="bi bi-award"></i>Formación</h3>
+          <h3 class="text-muted">
+            <i class="text-primary bi bi-award me-2"></i>Formación
+          </h3>
           <div
             class="card card-hover bg-dark-half border-0 shadow-sm overflow-hidden"
           >
@@ -166,12 +162,15 @@
       <div class="container position-relative zindex-5 py-5">
         <div class="row justify-content-center">
           <div class="col-xl-10 col-lg-7 col-md-9">
-            <h3 class="text-muted">Herramientas</h3>
+            <h3 class="text-muted">
+              <i class="bi bi-wrench-adjustable text-primary me-2"></i
+              >Herramientas
+            </h3>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center tools">
           <div id="tools" class="col-xl-5 col-lg-7 col-md-9">
-            <div class="card bg-dark card-hover border-0 shadow-sm p-3">
+            <div class="card bg-dark card-hover border-0 shadow-sm p-3 tool-1">
               <span
                 class="position-absolute border-success top-0 start-0 w-100 h-100 rounded"
                 style="background-color: rgba(255, 255, 255, 0.05)"
@@ -212,7 +211,7 @@
             </div>
           </div>
           <div class="col-xl-5 col-lg-7 col-md-9 pt-xl-0 pt-3 pt-md-3">
-            <div class="card bg-dark card-hover border-0 shadow-sm p-3">
+            <div class="card bg-dark card-hover border-0 shadow-sm p-3 tool-2">
               <span
                 class="position-absolute border-danger top-0 start-0 w-100 h-100 rounded"
                 style="background-color: rgba(255, 255, 255, 0.05)"
@@ -257,7 +256,7 @@
 
         <div class="row justify-content-center">
           <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5 pt-3">
-            <div class="card bg-dark card-hover border-0 shadow-sm p-3">
+            <div class="card bg-dark card-hover border-0 shadow-sm p-3 tool-3">
               <span
                 class="position-absolute border-warning top-0 start-0 w-100 h-100 rounded"
                 style="background-color: rgba(255, 255, 255, 0.05)"
@@ -291,7 +290,7 @@
             </div>
           </div>
           <div class="col-xl-5 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5 pt-3">
-            <div class="card bg-dark card-hover border-0 shadow-sm p-3">
+            <div class="card bg-dark card-hover border-0 shadow-sm p-3 tool-4">
               <span
                 class="position-absolute border-info top-0 start-0 w-100 h-100 rounded"
                 style="background-color: rgba(255, 255, 255, 0.05)"
@@ -329,7 +328,7 @@
 
         <div class="row justify-content-center pt-3">
           <div class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5">
-            <div class="card bg-dark card-hover border-0 shadow-sm p-3">
+            <div class="card bg-dark card-hover border-0 shadow-sm p-3 tool-5">
               <span
                 class="position-absolute border-primary top-0 start-0 w-100 h-100 rounded"
                 style="background-color: rgba(255, 255, 255, 0.05)"
@@ -344,28 +343,24 @@
                 <p class="pb-1 pb-lg-1 mb-0 mt-0">
                   <b>Lenguaje de marcas y hojas de estilo</b>
                 </p>
-                <span class="badge bg-secondary shadow-secondary">HTML</span>
-                <span class="badge bg-secondary shadow-secondary">XML</span>
-                <span class="badge bg-secondary shadow-secondary">CSS</span>
-                <span class="badge bg-secondary shadow-secondary">SCSS</span>
+                <span class="badge bg-primary shadow-primary">HTML</span>
+                <span class="badge bg-primary shadow-primary">XML</span>
+                <span class="badge bg-primary shadow-primary">CSS</span>
+                <span class="badge bg-primary shadow-primary">SCSS</span>
                 <p class="pb-1 pb-lg-1 mb-0 mt-2">
                   <b>Bases de datos</b>
                 </p>
-                <span class="badge bg-secondary shadow-secondary"
+                <span class="badge bg-primary shadow-primary"
                   >MySQL - Oracle SQL</span
                 >
-                <span class="badge bg-secondary shadow-secondary">MongoDB</span>
+                <span class="badge bg-primary shadow-primary">MongoDB</span>
                 <p class="pb-1 pb-lg-1 mb-0 mt-2">
                   <b>Frameworks de CSS</b>
                 </p>
-                <span class="badge bg-secondary shadow-secondary"
-                  >Bootstrap</span
-                >
-                <span class="badge bg-secondary shadow-secondary"
-                  >Tailwind</span
-                >
-                <span class="badge bg-secondary shadow-secondary">Bulma</span>
-                <span class="badge bg-secondary shadow-secondary">UIKit</span>
+                <span class="badge bg-primary shadow-primary">Bootstrap</span>
+                <span class="badge bg-primary shadow-primary">Tailwind</span>
+                <span class="badge bg-primary shadow-primary">Bulma</span>
+                <span class="badge bg-primary shadow-primary">UIKit</span>
               </div>
             </div>
           </div>
@@ -376,7 +371,9 @@
             id="projects"
             class="col-xl-10 col-lg-7 col-md-9 mt-md-5 mt-lg-1 mt-5"
           >
-            <h3 class="text-muted">Proyectos</h3>
+            <h3 class="text-muted">
+              <i class="bi bi-stack text-primary me-2"></i>Proyectos
+            </h3>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3">
               <div class="col position-relative project mb-4 mb-lg-5">
                 <img
@@ -428,10 +425,7 @@
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/rellax.min.js"></script>
-    <script>
-      if (document.querySelector(".rellax")) {
-        var rellax = new Rellax(".rellax");
-      }
-    </script>
+    <script src="assets/js/scrollreveal.js"></script>
+    <script src="assets/js/intial.js"></script>
   </body>
 </html>
