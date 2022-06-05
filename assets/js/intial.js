@@ -2,22 +2,23 @@ if (document.querySelector(".rellax")) {
   var rellax = new Rellax(".rellax");
 }
 
-const elementsToReveal = [
+const uniqueElements = [
   document.querySelector(".navbar"),
   document.querySelector(".fullscreen"),
-  document.querySelector(".tool-1"),
-  document.querySelector(".tool-2"),
-  document.querySelector(".tool-3"),
-  document.querySelector(".tool-4"),
-  document.querySelector(".tool-5"),
 ];
-
+const tools = document.querySelectorAll(".tool");
+const formation = document.querySelectorAll(".formation");
+console.log(formation);
+const project = document.querySelectorAll(".project");
 const reset = {
   reset: true,
   delay: delayReveal(2),
 };
 
-ScrollReveal().reveal(elementsToReveal, reset);
+ScrollReveal().reveal(uniqueElements, reset);
+ScrollReveal().reveal(formation, reset);
+ScrollReveal().reveal(tools, reset);
+ScrollReveal().reveal(project, reset);
 
 function delayReveal(number) {
   if (typeof number !== "number") throw new Error("Parameter must be a number");
