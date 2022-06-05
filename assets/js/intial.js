@@ -6,17 +6,15 @@ const uniqueElements = [
   document.querySelector(".navbar"),
   document.querySelector(".fullscreen"),
 ];
+const titles = document.querySelectorAll("h3");
 const tools = document.querySelectorAll(".tool");
 const formation = document.querySelectorAll(".formation");
-console.log(formation);
 const project = document.querySelectorAll(".project");
-const reset = {
-  reset: true,
-  delay: delayReveal(2),
-};
+const reset = toolReveal(2);
 
 ScrollReveal().reveal(uniqueElements, reset);
 ScrollReveal().reveal(formation, reset);
+ScrollReveal().reveal(titles, reset);
 ScrollReveal().reveal(tools, reset);
 ScrollReveal().reveal(project, reset);
 
@@ -29,6 +27,6 @@ function delayReveal(number) {
 function toolReveal(number) {
   return {
     reset: true,
-    delay: delay(number),
+    delay: delayReveal(number),
   };
 }
