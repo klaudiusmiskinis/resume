@@ -26,8 +26,20 @@ body {
   border-radius: 10px;
 }
 
+.fullscreen {
+  height: 80vh !important;
+}
+
+.half-margin {
+  margin-top: 5rem;
+}
+
 .bg-dark-half {
   background-color: rgba(31, 28, 45, 1) !important;
+}
+
+.text-12 {
+  font-size: 25px;
 }
 
 .shape {
