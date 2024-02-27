@@ -122,6 +122,7 @@ body {
   position: relative;
   height: 1080px; /* Altura de la imagen */
   background: url("../images/jpg/pattern.jpg") no-repeat;
+  filter: blur(2px);
   background-size: cover;
 }
 
