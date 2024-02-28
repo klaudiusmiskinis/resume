@@ -1,13 +1,8 @@
-*,
 body,
 html {
-  scroll-behavior: smooth;
   margin: 0;
   padding: 0;
   height: 100%;
-}
-body {
-  background: var(--bs-primary);
 }
 :root {
   --bs-dark-half: rgba(255, 255, 255, 0.05);
@@ -35,8 +30,9 @@ body {
   --bs-gray-700: #585c7b;
   --bs-gray-800: #3e4265;
   --bs-gray-900: #131022;
-  --bs-primary: #0e0e36;
-  --bs-primary-darker: #484bf5;
+  --bs-primary: #484bf5;
+  --bs-primary-transparent: #484bf521;
+  --bs-primary-darker: #0e0e36;
   --bs-secondary: #eff2fc;
   --bs-success: #22c55e;
   --bs-info: #4c82f7;
@@ -74,4 +70,59 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--bs-primary);
   border-radius: 10px;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.full-height {
+  min-height: 100vh; /* Altura mínima de 100% de la altura de la ventana */
+}
+
+.position-relative,
+.position-absolute {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+  grid-gap: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.5) 0.1px,
+      transparent 0.6px
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5) 0.1px,
+      transparent 0.6px
+    );
+  background-size: 100px 100px;
+  pointer-events: none;
+}
+
+.bg-landing-faded {
+  background: radial-gradient(
+    farthest-side ellipse at 50% 0%, /* Óvalo alineado con la parte superior y centrado horizontalmente */
+    var(--bs-gray-dark) 0%, /* Color de inicio en el centro */
+    black 50% /* Color hasta la mitad del óvalo */
+  );
+  background-size: 100% 100%; /* 100% de ancho y 200% de alto para que se extienda más allá de la pantalla */
+  background-repeat: no-repeat; /* Para prevenir que el degradado se repita */
 }
